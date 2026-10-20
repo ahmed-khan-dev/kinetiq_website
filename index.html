@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Kinetiq – AI fitness and diet coach for Android</title>
-  <meta name="description" content="Kinetiq builds your calorie and macro targets, guides every workout set by set, logs meals from a photo and tracks your progress. Get the Android APK.">
+  <title>Kinetiq – Offline fitness and diet tracker for Android</title>
+  <meta name="description" content="Kinetiq is an offline fitness and diet tracker for manually recording workouts, meals and progress. Get the Android APK.">
   <meta name="theme-color" content="#111317">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
 
   <!-- Open Graph / sharing. For link previews to work, use absolute URLs once deployed (see README). -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Kinetiq – AI fitness and diet coach">
-  <meta property="og:description" content="Personal calorie and macro targets, guided workouts, photo meal logging and progress tracking in one Android app.">
+  <meta property="og:title" content="Kinetiq – Offline fitness and diet tracker">
+  <meta property="og:description" content="Manually record your workouts, meals and progress in one Android app.">
   <meta property="og:image" content="assets/brand/og-image.png">
   <meta property="og:image:alt" content="Kinetiq app screens on a dark green background">
   <meta name="twitter:card" content="summary_large_image">
@@ -50,7 +50,7 @@
       <div class="hero-copy">
         <img class="hero-logo" src="assets/brand/logo.svg" alt="Kinetiq app icon" width="64" height="64">
         <h1>Coaching that counts every set and every meal.</h1>
-        <p class="lede">Kinetiq turns your height, weight and goal into calorie and macro targets, guides each workout set by set, and logs meals from a photo.</p>
+        <p class="lede">Kinetiq helps you set calorie and macro targets, log workouts set by set, record meals manually and track your progress offline.</p>
         <div class="cta-row">
           <a class="btn" id="heroDownload" href="#download">Download APK</a>
           <a class="btn btn-ghost" href="#features">Explore features</a>
@@ -73,7 +73,7 @@
               <div class="phone-screen" id="heroScreens">
                 <img class="is-active" src="assets/screens/home.webp" alt="Kinetiq home dashboard with calorie ring, macro bars and today's scheduled workout" width="540" height="1200" fetchpriority="high" decoding="async">
                 <img src="assets/screens/session.webp" alt="Kinetiq active workout screen with form cue, reps, load and effort level" width="540" height="1200" loading="lazy" decoding="async">
-                <img src="assets/screens/meal-scan.webp" alt="Kinetiq meal logging screen using the AI optical scan" width="540" height="1200" loading="lazy" decoding="async">
+                <img src="assets/screens/meal-scan.webp" alt="Kinetiq meal logging screen" width="540" height="1200" loading="lazy" decoding="async">
               </div>
               <span class="glare" id="heroGlare"></span>
             </div>
@@ -88,11 +88,12 @@
       <div class="wrap about-grid">
         <h2>One place for the plan, the plate and the progress.</h2>
         <div class="about-text">
-          <p><strong>Kinetiq is an AI-powered fitness and diet coaching app.</strong> It builds personalised workout and nutrition plans from your biometrics and goals, then tracks how the week actually goes.</p>
+          <p><strong>Kinetiq is an offline fitness and diet tracking app.</strong> Enter your workouts, meals and body measurements manually, then keep a record of your progress over time.</p>
           <dl class="about-facts">
             <div><dt>Who it’s for</dt><dd>People training for goals such as weight loss or body recomposition, from beginners with no equipment to advanced lifters with a full gym.</dd></div>
             <div><dt>The problem</dt><dd>Targets, workouts, meals and body measurements usually live in separate places. Kinetiq keeps them in one app and calculates the numbers for you.</dd></div>
             <div><dt>Why use it</dt><dd>You get a calorie goal and macro split worked out from your own data, a coach cue on every exercise, and a record you can look back on.</dd></div>
+            <div><dt>Coming in future updates</dt><dd>AI analytics, AI chat, social following and leaderboards are planned for future releases.</dd></div>
           </dl>
         </div>
       </div>
@@ -134,7 +135,7 @@
             <article class="feature" data-key="home">
               <span class="ficon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 0 1 8 8"/></svg></span>
               <h3>A daily dashboard</h3>
-              <p>A calorie ring and protein, carb and fat bars show how today is going, with calories remaining and an AI-written directive. Below it sit your logging streak, meal breakdown and today’s scheduled training.</p>
+              <p>A calorie ring and protein, carb and fat bars show how today is going, with calories remaining. Below it sit your logging streak, meal breakdown and today’s scheduled training.</p>
               <img class="feature-shot" src="assets/screens/home.webp" alt="Home dashboard with calorie ring, macro bars and scheduled training" width="540" height="1200" loading="lazy" decoding="async">
             </article>
 
@@ -147,9 +148,9 @@
 
             <article class="feature" data-key="meal-scan">
               <span class="ficon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-2h6l2 2h3v11H4z"/><circle cx="12" cy="13" r="3.2"/></svg></span>
-              <h3>Meals from a photo</h3>
-              <p>Take or choose a photo and the AI optical scan suggests the dish. Check the meal timing, edit calories, protein, carbs and fats, then save it. Recent meals stay in a list for quick review.</p>
-              <img class="feature-shot" src="assets/screens/meal-scan.webp" alt="Meal logging screen with AI optical scan of a plate of food" width="540" height="1200" loading="lazy" decoding="async">
+              <h3>Manual meal logging</h3>
+              <p>Enter your meal details, timing, calories, protein, carbs and fats, then save them to your day. Recent meals stay in a list for quick review.</p>
+              <img class="feature-shot" src="assets/screens/meal-scan.webp" alt="Manual meal logging screen" width="540" height="1200" loading="lazy" decoding="async">
             </article>
 
             <article class="feature" data-key="progress">
@@ -227,7 +228,7 @@
           </li>
           <li class="step">
             <span class="step-n">3</span>
-            <div><h3>Log meals</h3><p>Photograph your plate, confirm the dish and macros, and save the meal to your day.</p></div>
+            <div><h3>Log meals</h3><p>Enter meal details and macros manually, then save the meal to your day.</p></div>
             <img src="assets/screens/meal-log.webp" alt="Meal log form with macronutrient fields and recent meals" width="540" height="1200" loading="lazy" decoding="async">
           </li>
           <li class="step">
@@ -295,7 +296,7 @@
         <div class="faq-list" id="faqList">
           <details open>
             <summary>What is Kinetiq?</summary>
-            <p>Kinetiq is an AI-powered fitness and diet coaching app. It builds workout and nutrition plans from your biometrics and goals and tracks your training, meals and body progress in one place.</p>
+            <p>Kinetiq is an offline fitness and diet tracking app for manually logging workouts, meals and body progress in one place.</p>
           </details>
           <details>
             <summary>Which devices does it support?</summary>
@@ -327,7 +328,7 @@
     <div class="wrap footer-grid">
       <div class="footer-brand">
         <a class="brand" href="#top"><img src="assets/brand/logo.svg" alt="" width="34" height="34"><span>Kinetiq</span></a>
-        <p>AI fitness and diet coach for Android.</p>
+        <p>Offline fitness and diet tracker for Android.</p>
       </div>
       <nav aria-label="Footer">
         <a href="#about">About</a><a href="#features">Features</a><a href="#preview">Preview</a><a href="#how">How it works</a><a href="#download">Download</a><a href="#gallery">Gallery</a><a href="#faq">FAQ</a>

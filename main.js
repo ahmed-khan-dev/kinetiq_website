@@ -20,7 +20,7 @@
     "plan":           ["Weekly plan", "Five-day push, pull and legs weekly plan with today’s session"],
     "session-plan":   ["Scheduled session", "Scheduled session with exercise list, Start Workout and Export Weekly PDF Report buttons"],
     "session":        ["Active workout", "Active workout with coach form cue, rest time, reps, load and effort level"],
-    "meal-scan":      ["AI meal scan", "Log Meal screen with the AI optical scan of a plate of food"],
+    "meal-scan":      ["Meal log", "Manual meal logging screen"],
     "meal-log":       ["Meal log", "Meal log form with dish title, meal timing, macronutrients and recent logged meals"],
     "progress":       ["Body progress", "Body progress and analytics with waist, chest, body fat and a four-week trajectory"],
     "progress-photo": ["Progress photos", "Weight trend chart and progress photo capture with angle selection"],
@@ -148,7 +148,7 @@
       spots: [
         { x: 33, y: 27, t: "Calorie ring", b: "Calories eaten against your daily target, with the number left shown underneath." },
         { x: 91, y: 28, t: "Macro bars", b: "Protein, carbs and fats each track against their own daily target." },
-        { x: 90, y: 44.5, t: "Hypertrophy directive", b: "A short, AI-generated piece of coaching based on how today is going." },
+        { x: 90, y: 44.5, t: "Daily guidance", b: "A short coaching note to help guide today's training." },
         { x: 88, y: 82, t: "Open Workout", b: "Starts today’s scheduled session, with its sets and reps listed above." }
       ] },
     { key: "session", label: "Workout", title: "Log a set in seconds",
@@ -159,8 +159,8 @@
         { x: 50, y: 57.5, t: "Reps and load", b: "Set the reps you finished and the load in kilograms with plus and minus buttons." },
         { x: 94, y: 66.5, t: "Effort level", b: "Rate how hard the set felt from 7 to 10 (RPE)." }
       ] },
-    { key: "meal-scan", label: "Meal scan", title: "Log a meal from a photo",
-      body: "Capture or pick a photo. The AI optical scan suggests the dish, then you check the meal timing and macros before saving.", spots: [] },
+    { key: "meal-scan", label: "Meal log", title: "Log a meal manually",
+      body: "Enter the meal details, timing and macros, then save it to your daily record.", spots: [] },
     { key: "progress", label: "Progress", title: "See the trend",
       body: "Waist, chest and body fat with trend arrows, a four-week trajectory, weight logging and estimated 1RM strength.", spots: [] },
     { key: "session-plan", label: "Weekly plan", title: "Plan the week",
