@@ -1,0 +1,2 @@
+# Apache hosting: serve APKs with the correct MIME type.
+AddType application/vnd.android.package-archive .apk

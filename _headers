@@ -1,0 +1,5 @@
+# Netlify and Cloudflare Pages: serve APKs with the right type and force a download.
+/downloads/*.apk
+  Content-Type: application/vnd.android.package-archive
+  Content-Disposition: attachment
+  Cache-Control: public, max-age=3600

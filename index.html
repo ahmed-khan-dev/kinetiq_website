@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Kinetiq – AI fitness and diet coach for Android</title>
+  <meta name="description" content="Kinetiq builds your calorie and macro targets, guides every workout set by set, logs meals from a photo and tracks your progress. Get the Android APK.">
+  <meta name="theme-color" content="#111317">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <!-- Open Graph / sharing. For link previews to work, use absolute URLs once deployed (see README). -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Kinetiq – AI fitness and diet coach">
+  <meta property="og:description" content="Personal calorie and macro targets, guided workouts, photo meal logging and progress tracking in one Android app.">
+  <meta property="og:image" content="assets/brand/og-image.png">
+  <meta property="og:image:alt" content="Kinetiq app screens on a dark green background">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="progress" aria-hidden="true"><i id="progressBar"></i></div>
+
+  <header class="nav" id="nav">
+    <a class="brand" href="#top" aria-label="Kinetiq home">
+      <img src="assets/brand/logo.svg" alt="" width="34" height="34">
+      <span>Kinetiq</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu">
+      <span></span><span></span>
+    </button>
+    <nav class="nav-links" id="navLinks" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#features">Features</a>
+      <a href="#preview">Preview</a>
+      <a href="#how">How it works</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn btn-small" href="#download">Download APK</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <img class="hero-logo" src="assets/brand/logo.svg" alt="Kinetiq app icon" width="64" height="64">
+        <h1>Coaching that counts every set and every meal.</h1>
+        <p class="lede">Kinetiq turns your height, weight and goal into calorie and macro targets, guides each workout set by set, and logs meals from a photo.</p>
+        <div class="cta-row">
+          <a class="btn" id="heroDownload" href="#download">Download APK</a>
+          <a class="btn btn-ghost" href="#features">Explore features</a>
+        </div>
+        <p class="fine">Android app · installed from an APK, not the Play Store</p>
+      </div>
+
+      <div class="stage" id="heroStage" aria-hidden="false">
+        <div class="stage-glow"></div>
+        <div class="rig" id="heroRig">
+          <div class="phone phone-side phone-left">
+            <div class="phone-body"><div class="phone-screen"><img src="assets/screens/lock.webp" alt="Kinetiq App Lock screen with biometric unlock and PIN keypad" width="540" height="1200" loading="lazy" decoding="async"></div></div>
+          </div>
+          <div class="phone phone-side phone-right">
+            <div class="phone-body"><div class="phone-screen"><img src="assets/screens/progress.webp" alt="Body progress and analytics screen with a four-week trend" width="540" height="1200" loading="lazy" decoding="async"></div></div>
+          </div>
+          <div class="phone phone-main" id="heroPhone">
+            <i class="slab" style="--z:-5px"></i><i class="slab" style="--z:-10px"></i><i class="slab" style="--z:-15px"></i><i class="slab" style="--z:-20px"></i>
+            <div class="phone-body">
+              <div class="phone-screen" id="heroScreens">
+                <img class="is-active" src="assets/screens/home.webp" alt="Kinetiq home dashboard with calorie ring, macro bars and today's scheduled workout" width="540" height="1200" fetchpriority="high" decoding="async">
+                <img src="assets/screens/session.webp" alt="Kinetiq active workout screen with form cue, reps, load and effort level" width="540" height="1200" loading="lazy" decoding="async">
+                <img src="assets/screens/meal-scan.webp" alt="Kinetiq meal logging screen using the AI optical scan" width="540" height="1200" loading="lazy" decoding="async">
+              </div>
+              <span class="glare" id="heroGlare"></span>
+            </div>
+          </div>
+        </div>
+        <div class="floor"></div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about" id="about">
+      <div class="wrap about-grid">
+        <h2>One place for the plan, the plate and the progress.</h2>
+        <div class="about-text">
+          <p><strong>Kinetiq is an AI-powered fitness and diet coaching app.</strong> It builds personalised workout and nutrition plans from your biometrics and goals, then tracks how the week actually goes.</p>
+          <dl class="about-facts">
+            <div><dt>Who it’s for</dt><dd>People training for goals such as weight loss or body recomposition, from beginners with no equipment to advanced lifters with a full gym.</dd></div>
+            <div><dt>The problem</dt><dd>Targets, workouts, meals and body measurements usually live in separate places. Kinetiq keeps them in one app and calculates the numbers for you.</dd></div>
+            <div><dt>Why use it</dt><dd>You get a calorie goal and macro split worked out from your own data, a coach cue on every exercise, and a record you can look back on.</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURES ============ -->
+    <section class="section features" id="features">
+      <div class="wrap">
+        <h2 class="section-title">What’s inside Kinetiq</h2>
+        <p class="section-sub">Every feature below is taken from the app itself.</p>
+
+        <div class="feature-layout">
+          <div class="feature-sticky" aria-hidden="true">
+            <div class="stage stage-sticky">
+              <div class="phone phone-main phone-flat">
+                <div class="phone-body">
+                  <div class="phone-screen" id="featureScreens">
+                    <img class="is-active" data-key="targets" src="assets/screens/targets.webp" alt="" width="540" height="1200" loading="lazy" decoding="async">
+                    <img data-key="home" src="assets/screens/home.webp" alt="" width="540" height="1200" loading="lazy" decoding="async">
+                    <img data-key="session" src="assets/screens/session.webp" alt="" width="540" height="1200" loading="lazy" decoding="async">
+                    <img data-key="meal-scan" src="assets/screens/meal-scan.webp" alt="" width="540" height="1200" loading="lazy" decoding="async">
+                    <img data-key="progress" src="assets/screens/progress.webp" alt="" width="540" height="1200" loading="lazy" decoding="async">
+                    <img data-key="session-plan" src="assets/screens/session-plan.webp" alt="" width="540" height="1200" loading="lazy" decoding="async">
+                    <img data-key="lock" src="assets/screens/lock.webp" alt="" width="540" height="1200" loading="lazy" decoding="async">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-list" id="featureList">
+            <article class="feature" data-key="targets">
+              <span class="ficon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 19V9m5 10V5m5 14v-8m5 8V8"/></svg></span>
+              <h3>Targets worked out from you</h3>
+              <p>A four-step setup collects your age, height, weight, goal, fitness level, activity level, equipment and available time. Kinetiq then calculates your BMR, TDEE, daily calorie goal and a protein, fat and carbohydrate split.</p>
+              <img class="feature-shot" src="assets/screens/targets.webp" alt="Calculated targets preview showing BMR, TDEE, daily calorie goal and macronutrient split" width="540" height="1200" loading="lazy" decoding="async">
+            </article>
+
+            <article class="feature" data-key="home">
+              <span class="ficon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 0 1 8 8"/></svg></span>
+              <h3>A daily dashboard</h3>
+              <p>A calorie ring and protein, carb and fat bars show how today is going, with calories remaining and an AI-written directive. Below it sit your logging streak, meal breakdown and today’s scheduled training.</p>
+              <img class="feature-shot" src="assets/screens/home.webp" alt="Home dashboard with calorie ring, macro bars and scheduled training" width="540" height="1200" loading="lazy" decoding="async">
+            </article>
+
+            <article class="feature" data-key="session">
+              <span class="ficon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 8v8M18 8v8M3 10v4M21 10v4M6 12h12"/></svg></span>
+              <h3>Workouts, set by set</h3>
+              <p>Work through each exercise with a coach form cue, a rest timer with +30s and Skip, and inputs for reps and load. Rate every set with an effort level from 7 to 10.</p>
+              <img class="feature-shot" src="assets/screens/session.webp" alt="Active workout screen with coach form cue, reps, load and effort level" width="540" height="1200" loading="lazy" decoding="async">
+            </article>
+
+            <article class="feature" data-key="meal-scan">
+              <span class="ficon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-2h6l2 2h3v11H4z"/><circle cx="12" cy="13" r="3.2"/></svg></span>
+              <h3>Meals from a photo</h3>
+              <p>Take or choose a photo and the AI optical scan suggests the dish. Check the meal timing, edit calories, protein, carbs and fats, then save it. Recent meals stay in a list for quick review.</p>
+              <img class="feature-shot" src="assets/screens/meal-scan.webp" alt="Meal logging screen with AI optical scan of a plate of food" width="540" height="1200" loading="lazy" decoding="async">
+            </article>
+
+            <article class="feature" data-key="progress">
+              <span class="ficon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-9"/></svg></span>
+              <h3>Progress you can look back on</h3>
+              <p>Track waist, chest and body fat, log your weight, and follow a four-week trend and estimated 1RM strength. Add progress photos with an angle tag and keep them in a saved gallery.</p>
+              <img class="feature-shot" src="assets/screens/progress.webp" alt="Body progress and analytics screen with a four-week trajectory" width="540" height="1200" loading="lazy" decoding="async">
+            </article>
+
+            <article class="feature" data-key="session-plan">
+              <span class="ficon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 3h8l4 4v14H7z"/><path d="M15 3v4h4M10 13h6M10 17h6"/></svg></span>
+              <h3>A weekly plan, and a PDF of it</h3>
+              <p>Get a five-day push, pull and legs plan, start a new week or repeat the plan, add custom exercises, and export a weekly PDF report of sessions, planned work and logged sets.</p>
+              <img class="feature-shot" src="assets/screens/session-plan.webp" alt="Scheduled session with exercise list and export weekly PDF report button" width="540" height="1200" loading="lazy" decoding="async">
+            </article>
+
+            <article class="feature" data-key="lock">
+              <span class="ficon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></span>
+              <h3>Locked behind you</h3>
+              <p>Kinetiq App Lock opens with your fingerprint or face, with a four-digit PIN keypad as the fallback.</p>
+              <img class="feature-shot" src="assets/screens/lock.webp" alt="Kinetiq App Lock with biometric unlock and PIN keypad" width="540" height="1200" loading="lazy" decoding="async">
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INTERACTIVE PREVIEW ============ -->
+    <section class="section preview" id="preview">
+      <div class="wrap">
+        <h2 class="section-title">Try the app on screen</h2>
+        <p class="section-sub">Drag the phone to turn it. Pick a screen, then tap the pulsing dots to see what each part does.</p>
+
+        <div class="preview-grid">
+          <div class="preview-stage" id="previewStage">
+            <div class="stage-glow"></div>
+            <div class="rig rig-drag" id="previewRig" tabindex="0" aria-label="Phone preview. Drag or use the arrow keys to rotate.">
+              <div class="phone phone-main">
+                <i class="slab" style="--z:-5px"></i><i class="slab" style="--z:-10px"></i><i class="slab" style="--z:-15px"></i><i class="slab" style="--z:-20px"></i>
+                <div class="phone-body">
+                  <div class="phone-screen" id="previewScreens"></div>
+                  <div class="hotspots" id="hotspots"></div>
+                  <span class="glare" id="previewGlare"></span>
+                </div>
+              </div>
+            </div>
+            <div class="floor"></div>
+          </div>
+
+          <div class="preview-panel">
+            <div class="tabs" role="tablist" aria-label="App screens" id="previewTabs"></div>
+            <div class="note-card" id="previewNote" aria-live="polite">
+              <h3 id="noteTitle"></h3>
+              <p id="noteBody"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOW IT WORKS ============ -->
+    <section class="section how" id="how">
+      <div class="wrap">
+        <h2 class="section-title">How it works</h2>
+        <ol class="steps" id="steps">
+          <li class="step">
+            <span class="step-n">1</span>
+            <div><h3>Calibrate</h3><p>Enter your metrics, goal, fitness level and equipment. Kinetiq calculates your calorie target and macro split.</p></div>
+            <img src="assets/screens/profile-goals.webp" alt="Profile setup step 2: fitness and goal configuration" width="540" height="1200" loading="lazy" decoding="async">
+          </li>
+          <li class="step">
+            <span class="step-n">2</span>
+            <div><h3>Train</h3><p>Open today’s workout, follow the form cue, and log reps, load and effort for each set.</p></div>
+            <img src="assets/screens/session.webp" alt="Active workout with set tracking" width="540" height="1200" loading="lazy" decoding="async">
+          </li>
+          <li class="step">
+            <span class="step-n">3</span>
+            <div><h3>Log meals</h3><p>Photograph your plate, confirm the dish and macros, and save the meal to your day.</p></div>
+            <img src="assets/screens/meal-log.webp" alt="Meal log form with macronutrient fields and recent meals" width="540" height="1200" loading="lazy" decoding="async">
+          </li>
+          <li class="step">
+            <span class="step-n">4</span>
+            <div><h3>Review</h3><p>Check the trend in your measurements and strength, add a progress photo, and export your weekly PDF.</p></div>
+            <img src="assets/screens/progress-photo.webp" alt="Weight trend chart and progress photo capture" width="540" height="1200" loading="lazy" decoding="async">
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ DOWNLOAD ============ -->
+    <section class="section download" id="download">
+      <div class="wrap download-grid">
+        <div>
+          <h2>Download Kinetiq for Android</h2>
+          <p class="lede">This is an independent APK download. It is not installed from the Google Play Store, so Android will ask for permission first.</p>
+
+          <div class="dl-card" id="dlCard">
+            <div class="dl-head">
+              <img src="assets/brand/logo.svg" alt="" width="52" height="52">
+              <div>
+                <strong id="dlName">Kinetiq</strong>
+                <span id="dlFile" class="dl-file"></span>
+              </div>
+            </div>
+            <a class="btn btn-large" id="dlButton" href="#download" aria-disabled="true">Download APK</a>
+            <p class="dl-status" id="dlStatus" role="status"></p>
+            <dl class="dl-meta" id="dlMeta"></dl>
+          </div>
+        </div>
+
+        <div class="install">
+          <h3>Install in four steps</h3>
+          <ol>
+            <li>Download the APK file to your Android phone.</li>
+            <li>Open the downloaded file from your browser or Files app.</li>
+            <li>If Android asks, allow your browser or Files app to install unknown apps. The wording differs between phones.</li>
+            <li>Tap Install, then open Kinetiq.</li>
+          </ol>
+          <p class="fine">You only need to allow installs from this source for your browser or file manager. You can turn that permission off again after installing.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section class="section gallery" id="gallery">
+      <div class="wrap">
+        <h2 class="section-title">Screenshots</h2>
+      </div>
+      <div class="gallery-bar wrap">
+        <p class="section-sub" id="galleryCount"></p>
+        <div class="gallery-btns">
+          <button class="icon-btn" id="galPrev" aria-label="Scroll screenshots left"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+          <button class="icon-btn" id="galNext" aria-label="Scroll screenshots right"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
+        </div>
+      </div>
+      <div class="track" id="galleryTrack" tabindex="0" aria-label="Screenshot gallery"></div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section faq" id="faq">
+      <div class="wrap faq-grid">
+        <h2>Questions, answered</h2>
+        <div class="faq-list" id="faqList">
+          <details open>
+            <summary>What is Kinetiq?</summary>
+            <p>Kinetiq is an AI-powered fitness and diet coaching app. It builds workout and nutrition plans from your biometrics and goals and tracks your training, meals and body progress in one place.</p>
+          </details>
+          <details>
+            <summary>Which devices does it support?</summary>
+            <p>Kinetiq is an Android app. <span id="faqMin">The minimum Android version hasn’t been published yet.</span></p>
+          </details>
+          <details>
+            <summary>How do I install the APK?</summary>
+            <p>Download the file, open it, allow your browser or Files app to install unknown apps if Android asks, then tap Install. The steps are in the download section above.</p>
+          </details>
+          <details>
+            <summary>How do I update the app?</summary>
+            <p>Download the newest APK from this page and open it to install over the existing app. Android only accepts the update when it is signed with the same key as the version you already have.</p>
+          </details>
+          <details>
+            <summary>What if installation fails?</summary>
+            <p>Check that the file finished downloading, that you allowed installs from your browser or Files app, that you have free storage, and that your Android version meets the minimum. If it still fails, download the file again. Avoid uninstalling an existing copy first unless you’re happy to lose its data.</p>
+          </details>
+          <details>
+            <summary>Does Kinetiq use my location?</summary>
+            <p>The app asks for location and camera permission, along with biometric unlock. Meal logs and progress photos can be saved with a location and timestamp. Check the privacy policy for how that data is handled<span id="faqPrivacy"> (a link will appear here once one is published)</span>.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="#top"><img src="assets/brand/logo.svg" alt="" width="34" height="34"><span>Kinetiq</span></a>
+        <p>AI fitness and diet coach for Android.</p>
+      </div>
+      <nav aria-label="Footer">
+        <a href="#about">About</a><a href="#features">Features</a><a href="#preview">Preview</a><a href="#how">How it works</a><a href="#download">Download</a><a href="#gallery">Gallery</a><a href="#faq">FAQ</a>
+      </nav>
+      <div class="footer-meta" id="footerMeta">
+        <p>Developed by <strong>Ahmed Khan</strong></p>
+        <a href="https://www.linkedin.com/in/ahmedkhan-androiddeveloper/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:ammydevy8828@gmail.com">Email</a>
+        <a href="https://github.com/ahmed-khan-dev/" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </div>
+    <p class="wrap legal">Kinetiq provides general fitness and nutrition guidance and isn’t medical advice. Speak to a professional before starting a new programme. <span id="copy">© 2026 Kinetiq.</span></p>
+  </footer>
+
+  <dialog id="lightbox" aria-label="Screenshot viewer">
+    <button class="lb-close icon-btn" id="lbClose" aria-label="Close"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    <button class="lb-nav lb-prev icon-btn" id="lbPrev" aria-label="Previous screenshot"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+    <figure>
+      <img id="lbImg" src="" alt="">
+      <figcaption id="lbCap"></figcaption>
+    </figure>
+    <button class="lb-nav lb-next icon-btn" id="lbNext" aria-label="Next screenshot"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
+  </dialog>
+
+  <script src="config.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
